@@ -1,0 +1,30 @@
+CNN.com - Technology - CNNdotCOM Technofile: iRobot - December 30, 2000
+(cnn) -- billed as the world's first internet-controlled robot, irobot
+   puts users in two places at once you can steer this mars rover
+   look-alike via your web browser from anywhere in the world. with a
+   linux-based personal computer for a brain, it can climb stairs and has
+   sonar to help it avoid obstacles. when its one-hour battery starts to
+   ebb, it's programmed to hoist itself onto its own recharger. irobot's
+   built-in microphone, speakers and digital video camera enable an
+   operator to hear, speak and see from the viewpoint of the robot.
+   "robotic telepresence," the company calls it. "i was inspired to go
+   into this field by seeing 'star wars' and the r2-d2 character," helen
+   greiner, co-founder of irobot, told cnn. "we wanted robots to be
+   friendly and for people to think of them as a helping hand around the
+   house." the 45-pound machine is steered by pointing and clicking
+   toward a destination. and irobot's beady laser eyes and animation make
+   it look friendly -- a trait its makers fully intended. it can make eye
+   contact with a seated person by standing up and extending its neck,
+   and has a small vocabulary to express itself. you may be thinking that
+   the $6,000 price tag is a bit steep for a mechanical body double. but
+   this is a state-of-the-art wireless device that also happens to be a
+   fully functioning portable computer -- complete with internet access
+   and a web browser. irobot is prompting a new wave of teleconferencing.
+   not only can you see, hear and speak at meetings from a remote
+   location, but you can also control the robot to look as your
+   co-workers speak in turn around the room. while this may not be the
+   prettiest way to represent yourself, it certainly is convenient and
+   fun. and just imagine how useful web-controlled robots will become
+   once they're equipped with hands and arms. a robot belly that doubles
+   as a refrigerator would also be a good innovation but then again, you
+   might never get some men off the couch.

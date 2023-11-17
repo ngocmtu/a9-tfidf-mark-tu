@@ -1,0 +1,122 @@
+CNN.com - Analysts see five technologies as key to future - May 15, 2001
+(idg) -- moore's law declares that semiconductors will double in power
+   every 18 months. if that's going to hold true, engineers must find
+   ways to cram ever more circuits into ever smaller wafers of silicon.
+   but current chipmaking technologies are about to hit a wall.to make a
+   microchip, technicians shine light through a stencil of the circuit
+   pattern. the light travels through lenses, which focus the pattern
+   onto a silicon wafer covered with light-sensitive chemicals. when the
+   wafer is coated with acid, the desired circuitry emerges from the
+   silicon.the problem is that creating smaller circuits requires shorter
+   wavelengths of light. current technology uses lightwaves about 240
+   nanometers long -- so-called deep ultraviolet light -- to create
+   circuits about 100 nanometers wide. (a nanometer is one-billionth of a
+   meter.) but smaller wavelengths won't work because they're absorbed by
+   conventional lenses; they have trouble simply traveling through
+   air.that's where physicists at the lawrence livermore lab in
+   california could help. they've been playing with extreme ultraviolet
+   light -- with wavelengths from 10 to 100 nanometers -- since the
+   reagan administration, as part of their work on the "star wars"
+   defense system. in 1997, a consortium including advanced micro
+   devices, intel and motorola offered the lab $250 million to figure out
+   ways to use euv light in chip manufacturing.the scientists have made
+   significant progress. the key: using mirrors instead of lenses. if
+   they succeed, circuits could shrink in width to 10 nanometers -- that,
+   in turn, could make microprocessors 100 times more powerful than
+   today's. the first euv-based chips are expected to hit store shelves
+   by 2005.someday, flat panels -- like the screen on your laptop -- will
+   be the standard displays for computers, tvs and cell phones. but
+   today's most common flat panels -- liquid crystal displays (lcds) --
+   are expensive, hard-to-manufacture electricity hogs. that's why
+   monitor makers are all a-goggle over organic light-emitting devices,
+   known as oleds. originally developed by kodak in the late '70s and
+   since refined by a host of companies (including cambridge display
+   technology, dupont, ibm, nec, philips and universal display), oleds
+   are based on something called electroluminescence. certain organic
+   materials emit light when an electric current passes through them.
+   sandwich such materials between two electrodes and you've got a
+   display. in addition to soaking up less electricity than lcds, oleds
+   are easier to manufacture. that simplicity, along with lower materials
+   costs, makes them cheaper to build. yet they're brighter than lcds,
+   with better color saturation and a wider viewing angle. and because
+   they can be quite thin, oleds make all sorts of sci-fi scenarios
+   possible. imagine stock quotes scrolling across your pen, or movies
+   playing on your handheld. already, pioneer has released a car
+   radio-cum-navigation device in japan that uses a 64-by-256-pixel oled
+   screen to display traffic conditions. motorola's timeport p8767 phone,
+   which debuted in japan in september, sports an oled screen. seiko
+   plans to release an oled phone capable of full-color video in
+   2002.telecoms are burying thousands of miles of fiber under the
+   streets of america, laying the groundwork for the superfast network of
+   the future. there's just one problem: the hardware currently used to
+   direct the flow of data isn't fast enough to keep up with the traffic
+   on all that glass. optical switching could help. optical networks use
+   beams of light, rather than electrons, to carry data. today, most of
+   these networks use so-called optoelectronic switches to direct network
+   traffic. these switches convert incoming light signals into electronic
+   form, examine their network addressing, then convert them back to
+   optical signals and send them on their way. unfortunately, the
+   conversion process is awfully slow. the next generation of devices --
+   known as photonic switches, pure optical switches or simply optical
+   switches -- eliminate that conversion step, making them fast enough to
+   keep up with today's fiber networks. the payoff: faster performance
+   and higher network capacity. purely optical switches do have their
+   drawbacks: because they rely on a series of microscopic mechanical
+   mirrors to do their work, they may not be as reliable as the old
+   optoelectronic variety. still, expect these optical switches, from
+   vendors including calient, cisco, nortel and tellium, to be deployed
+   at critical intersections on the net later this year. going online is
+   like walking into a dark room. nobody knows you're there except you
+   and the doorman (which in this case is your isp). but if something
+   called presence technology -- which detects when you're online and
+   what kind of device you're using -- catches on, it'll be like turning
+   on the lights. presence technology has its roots in instant messaging.
+   log on to an im service and your arrival is immediately announced to
+   your "buddy list" -- other registered users you've selected to be
+   alerted to your online presence. internet engineers are working on
+   ways to extend this announcement process beyond messaging, so that
+   every time you log onto the net, regardless of the device you're
+   using, your presence will be felt. telephony geeks are particularly
+   enthused: placing phone calls over the net would make a lot more sense
+   if you knew the other person was online.microsoft is among those
+   banking on presence technology. its new hailstorm services platform
+   depends on it. when someone tries to get in touch with you, the
+   hailstorm system will detect your network location and level of
+   accessibility: are you at your desk? in a meeting? in transit?
+   depending upon the answer, the system will e-mail, page or call
+   you.before that can happen, technologists must solve the
+   interoperability issue. just as america online im users can't
+   communicate with people on other services, there's no universal way to
+   announce someone's presence on the net. (aol time warner is the parent
+   company of cnn.com.) the internet engineering task force (an ad-hoc
+   group that helps keep the net humming) has a working group cogitating
+   on the problem. but the ietf process of turning a draft specification
+   into an established protocol can take years. microsoft waits for no
+   one: as the company rolls out hailstorm over the next couple of years,
+   look for presence technology to start insinuating itself into your
+   online life.no, it's not an oxymoron. touted by ibm, microsoft, oracle
+   and other titans of corporate computing, business intelligence is the
+   fad du jour in the database biz. the idea is simple: consolidate the
+   gigantic quantity of raw data that today's typical enterprise
+   generates, in all its various guises, into information that people --
+   middle managers as well as database technicians -- can access,
+   understand and act upon.business intelligence is the latest step in
+   the evolutionary development of corporate data tools. a couple of
+   years ago, everybody talked about "data mining" and "knowledge
+   management." both entailed extracting useful nuggets of information --
+   about customers, sales trends, manufacturing, whatever -- out of piles
+   of corporate data. today's business intelligence systems improve on
+   these predecessors by presenting their findings in more useful formats
+   -- using advanced data visualization tools -- and by deploying
+   artificial intelligence to look for patterns human users might not
+   look for. a bookseller, for example, might use traditional data tools
+   to find out which kinds of books sell best on weekends (and adjust her
+   sunday book section ad strategy accordingly). but business
+   intelligence software might show her a wholly unexpected correlation
+   between, say, her advertisement for the oprah winfrey opus and sales
+   of fishing guidebooks.business-intelligence technology has already
+   spawned some fierce competition. established software companies like
+   computer associates, ibm, informix, microsoft, oracle and sap, along
+   with younger competitors like business objects, cognos, microstrategy
+   and moreover.com, are vying for their share of a market that's
+   expected to grow from $3.5 billion this year to $8.8 billion in

@@ -1,0 +1,29 @@
+CNN.com - Technology - Comdex: iRobot is real-life R2-D2 - November 15, 2000
+las vegas, nevada (cnn) -- irobot, the closest thing yet to a personal
+   r2-d2, is roving comdex 2000. looking like a sportier version of
+   nasa's mars rover, the first wireless, web-connected robot sees, hears
+   and speaks for you. "i was inspired to go into this field by seeing
+   'star wars' and the r2-d2 character," said helen greiner, co-founder
+   of irobot. "we wanted robots to be friendly and for people to think of
+   them as a helping hand around the house." irobot has a digital video
+   camera and a built-in sonar so the operator can "see" from the
+   viewpoint of the robot. it also has a microphone and speakers, through
+   which the operator both listens and speaks. a web browser enables it
+   to be controlled from anywhere in the world; from within the room,
+   irobot functions by remote control. the 45-pound robot is agile,
+   avoiding obstacles and climbing stairs using its front flipper. the
+   operator steers it by pointing and clicking to a destination. and
+   irobot's beady laser eyes and limited animation make it look friendly
+   -- a trait its makers fully intended. it can make eye contact with a
+   seated person by standing up and extending its neck, and has a small
+   vocabulary to express itself. irobot runs on the linux operating
+   system and is a fully functioning computer. a battery fuels it for
+   about one hour, after which you can recharge by steering it to a
+   charging station. the 2.4 ghz irobot wirelessly connects to the
+   internet at 700 kbps, and it has a range of up to 150 feet indoors. it
+   requires a full-time internet connection providing 300 kbps of
+   outgoing bandwidth or more. greiner dispels any concern that this
+   $5,000 robot might be another step forward for "big brother." "you can
+   read a bedtime story to your kids ... you can make sure the dog didn't
+   eat the geraniums," greiner said. "people know the robot is in the
+   room, and they can see the red light flashing when it tapes."

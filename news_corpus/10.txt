@@ -1,0 +1,9 @@
+CNN.com - XML may bring biometrics into the mainstream - March 27, 2002
+(idg) -- verifying that you really are who you say you are isn't like it
+   used to be. an id badge or password is no longer enough. as more
+   biometric devices come to market, however, the industry must grapple
+   with how to format data so that it can be efficiently sent to and from
+   different devices and shared among many applications. one way to do
+   that is to use xml, an authoring language that allows programmers to
+   describe data on the web. xml is increasingly popular in b2b
+   applications, and now it may be on its way to biometrics.

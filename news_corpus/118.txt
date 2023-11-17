@@ -1,0 +1,110 @@
+CNN.com - Jobs announces delay in new Mac operating system - May 15, 2000
+from san francisco bureau chief greg lefevre san jose, california (cnn)
+   -- apple computer interim ceo steve jobs told the annual apple world
+   wide (software) developers conference on monday that he will delay the
+   release of the next generation macintosh operating system, os x, until
+   january. speaking from a huge stage at the cavernous san jose
+   convention center, jobs said he wants to give the developers more time
+   to get more programs to work on os x. earlier this year, jobs had
+   promised the new os for this fall. jobs says the new operating system
+   will run differently than macs of the past, but some features will
+   look familiar. months ago, jobs promised a "gentle migration" from the
+   os of old to the new. but early reviewers complained about the lack of
+   a "finder," that collection of symbols on the screen that told you
+   what software was on. monday, jobs smiled and told the crowd he had
+   heard, and the "finder feature" was back on. the most important
+   feature of the new os remains: a software crash won't lock up the
+   whole computer. despite the delay, you can try it yourself soon. jobs
+   announced that he'll give the public a beta version of the os x this
+   summer. anyone can have it, based on the hope that they'll feed ideas
+   for improvements back to apple. os x is based in part on the linux
+   operating system. linux is open source. anyone can see all the lines
+   of code and tweak and fix to their heart's content. microsoft's
+   windows is closed. only microsoft engineers can change it. linux, as
+   open source, is constantly being improved by ideas from users the
+   world over. so, jobs hopes, people worldwide will feed in ideas and
+   fixes for the open source os x. here are some specifics of the new
+   operating system: mac os x will show the name of the program that's
+   open on the menu line, left of what we now see as the file and edit
+   menus. the on screen dock at the bottom gets even cooler. programs or
+   documents can be dragged to the bottom of the screen to sit there
+   until needed again. to whoops and applause from the audience, jobs
+   delighted in showing how a document slinks and morphs from full size
+   on the screen into a tiny square shaped icon along the bottom. a
+   nearly infinite number of variations allows the icons along the bottom
+   to grow and compress, change shape and color, even rearrange
+   themselves. "fit and finish" were themes jobs repeated throughout the
+   hourlong presentation. the programs must look cool and run smoothly.
+   this day they did. no glitches or freezes. it did take one web page a
+   while to come up the first time. it was cnn.com. "must be a busy day
+   at cnn," jobs said as the browser on the huge display above him took a
+   long pause before text and graphics cascaded down the screen.
+   reliability was the other theme. make it work well and make it work
+   more easily, jobs repeated. to that end, he says mac os x is also
+   based in part on the linux operating system because of its crash
+   resistance and reliability. jobs gave each of the developers apple's
+   newest version of the os x developers materials, called preview 4. he
+   said it contained about "99 percent" of what software developers need
+   to write their products to run on mac os x. these previews are
+   software written specifically for programmers who want to make their
+   products work on macs. apple says so far more than 200 major software
+   companies have announced they will write new programs or convert their
+   present ones to run on mac os x. jobs repeatedly used microsoft's
+   internet explorer 5 browser to demonstrate the products. he put to
+   rest any thoughts of dumping ie5 as the installed browser. "the
+   (microsoft) ie5 team worked their tails off to do this," he said.
+   "besides, it's a great product." the mac os x is rapidly developing a
+   fan base of its own. the 3,000 attendees who filled the hall to
+   standing room only cheered the loudest when jobs showed apple's latest
+   convert: alias/wavefront's maya. maya is a monster animation software
+   package most commonly associated with "industrial strength" motion
+   picture computer animation. it will join the mac fold next year. movie
+   fans who saw mighty joe young rampage through the carnival saw maya's
+   work. remember the pod race in "star wars episode one"? maya worked on
+   that. so what are these guys doing adapting their software to run on a
+   store-bought desktop mac? "os x is powerful," maya's richard kerris
+   told me. he cited three reasons for what will be a nearly yearlong
+   effort to convert 25 million lines of code to play on the new mac os.
+   his customers demanded it, he wants apple users as his customers, and
+   he likes os x. maya is what is called "command line" software. an
+   animation artist would type in instructions for each phase of the
+   animation. in the mac version demonstrated for the developers, with a
+   click and pull of the mouse an operator reshaped an animated face and
+   watched it change shapes as he pulled it through a virtual knothole,
+   twisted it and turned it. maya's press statements say the conversion
+   to the mac os will allow an animator to "do in five minutes what it
+   used to take him half a day to do." and, kerris says, the desktop mac
+   g4 computer is extremely popular with web animators and many film and
+   motion picture post production artists. jobs also touted the addition
+   of adobe's indesign to the mac os fold. bruce chizen, adobe's
+   president, praised jobs for his efforts to keep the operating system
+   free choice issue alive -- to more cheers. then adobe's daniel edmonds
+   showed off indesign's graphics and page layout program using the still
+   aborning mac os x. the delay in the operating system is to be expected
+   for so radical change, those in the crowd said to each other. what's a
+   few months? one asked. microsoft's windows were more than a year late.
+   apple also says it has downloaded 50 million copies of its quicktime
+   video and audio software. jobs debuted some changes due this summer,
+   including changes in the "channels" panel that used to slide out of
+   the bottom of the picture. criticized as one of apple's few poor
+   design decisions, it is removed. channels now appear on the playback
+   screen itself, more in the look of a browser. quicktime is rapidly
+   gaining favor with internet programmers for its clearer video and ease
+   of use. jobs joked that he should distribute the new copies on boxes
+   of breakfast cereal, taking a cue from america online's mass
+   distribution of software discs for its service. (america online is
+   seeking to merge with time warner, the parent company of cnn and
+   cnn.com.) the new version of quicktime this summer will feature mpeg1
+   video compression for higher definition video, flash 4 for more
+   dramatic animations, and a spiffed up quicktime virtual reality.
+   quicktime vr now shows panoramas or images in full circle. the new
+   version shows an image or place in all directions. the example shown
+   depicted a church image where the viewer could pan right and left in a
+   full circle, look at the ceiling and study the floor. quicktime vr is
+   already in use by some real estate sites to show off homes. now house
+   hunters can examine the carpets and chandeliers as well. apple
+   promotes quicktime with pages of movie trailers at the apple.com
+   internet site. the company says nielsen internet ratings list theirs
+   as the net's most popular site for movie trailers. the latest online
+   trailer hit is "lord of the rings" from new line cinema, with
+   12-million downloads.

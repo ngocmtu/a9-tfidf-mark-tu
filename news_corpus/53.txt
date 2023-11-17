@@ -1,0 +1,91 @@
+CNN.com - Is your PC open to attack? - May 17, 2001
+(idg) -- like darth vader's storm troopers in "star wars," pc users with
+   cable modem hookups are being drafted as internet zombies for hack
+   attacks on commercial web sites.the malicious hackers who plan such
+   attacks call the unwitting pc pawns "zombies" because they're
+   unconscious accomplices. they seed the pcs in advance with small
+   programs that the cybervandals remotely activate later, and they use
+   the zombies to launch an attack on another system. the volume of these
+   distributed denial-of-service attacks is hard to measure, but they
+   seem to be on the rise. they're certainly drawing increased scrutiny
+   by computer security consultants, internet service providers, and big
+   cable modem companies like excite@home and at&t broadband. in two
+   recent attacks, including one last weekend, nearly 500 windows-powered
+   pcs with broadband connections were used to shut down a security
+   consultant's web site in southern california. "the huge majority [of
+   computers used in the attack] are home.com and rr.com accounts," both
+   broadband cable services, notes steve gibson, president of gibson
+   research corporation, the targeted site. he was able to trace the
+   location of some of the zombie-like pcs used in the assault to the
+   texas a&m university network. "these typically are [users] who are
+   clueless about security. they want to be on the internet, and they are
+   home cable modem users." gibson hopes his experience will illuminate
+   the problem and the dangers inherent in using broadband connections in
+   particular and the internet in general. "there is a serious, not just
+   a hypothetical, risk, a consequence, that involves a responsibility
+   with a connection to the internet," he says. "yes, it is wonderful.
+   yes, there is really cool stuff out there, but there are also people
+   without your best interest at heart." the crux of the problem -- and
+   the opportunity for malicious hackers -- is that a cable broadband
+   connection is "always on." and your conduit out to the internet can be
+   a two-way road. "what people don't get is that when you're connected
+   to the internet, the internet is connected to you," gibson says. "it's
+   a reciprocal relationship." denial-of-service attacks drew attention
+   last year when hackers crippled prominent sites like excite@home,
+   ebay, and yahoo!. microsoft sustained denial of service attacks
+   earlier this year. and even the undernet that supports the internet
+   relay chat network experienced attacks just a few months ago. security
+   experts recently expressed concern that many systems have recently
+   become zombies with the sudden spread of a particular worm. they fear
+   that a brief skirmish between chinese and american hackers resulted in
+   the seeding of many systems for a later distributed denial-of-service
+   attack. if they don't take simple security precautions, cable modem
+   users and pc owners with high-speed dsl connections can easily become
+   unwitting accomplices to denial of service attacks by hackers who can
+   also pilfer personal information like credit card and bank account
+   details. "i shudder to think that these people are doing their stock
+   portfolios or electronic banking or buying things with credit cards on
+   their computer over the internet while their computer security has
+   been completely compromised and are completely owned by these
+   hackers," gibson says. "these people have something bad in their
+   machines and they probably don't even realize it." many companies,
+   including excite@home and at&t broadband, provide the first
+   precaution. they begin the cable modem installation process by
+   disabling the file-sharing program that is on the windows operating
+   system of customer computers. "the installation cds that go out with
+   our installation technicians automatically disables file and print
+   sharing," says scott russell, high-speed data product director at at&t
+   broadband. "that puts up a wall so your neighbors can't see into your
+   computer." installing a firewall is the next simple, and inexpensive,
+   precaution. once a pc is compromised, however, gibson says the only
+   sure-fire cure for infection is to reformat the hard drive and
+   reinstall windows, an often time-consuming and frustrating experience.
+   like at&t, one of the first precautions that excite@home takes in
+   installing new service is to disable the windows file-sharing program.
+   do-it-yourself installers get the same warning. "we also have an
+   information page on our member services section talking about security
+   issues," says chris kelly, chief privacy officer for excite@home. "we
+   are working on the next generation of offerings that will include
+   firewall product recommendations." for web site operators, tools are
+   available to spot and stop denial of service attacks. also, at&t
+   broadband and excite@home say they monitor network traffic for
+   suspicious activity. "we scan the ports where most hacking activities
+   or unauthorized access might take place," excite@home's kelly says.
+   "we also do regular network monitoring to look for any suspicious
+   activity. we are not perfect at it, but we are like a credit card
+   company looking for some suspicious activity on the network." security
+   issues borne of the proliferation of broadband connections are
+   expected to grow, simply because the number of pcs with high-speed
+   connections is increasing. and certain jurisdictions are going to feel
+   the heat. nearly one in every ten broadband users lives in new york
+   city, and 30 percent are clumped in the top five u.s. metropolitan
+   centers: new york, los angeles, san francisco, boston, and seattle,
+   according to nielsen/netratings, the internet audience measurement
+   service. broadband access grew 134 percent in the past year, according
+   to nielsen/netratings. its researchers report that nearly 16 million
+   users accessed the internet from home last month via cable modem, dsl,
+   isdn, or lan, compared with only 6.8 million in april 2000. gartner
+   forecasts there will be 17.3 million residential broadband users in
+   the united states next year, up from an estimated 11 million users in
+   2000. the total is expected to jump to 17.4 million in 2002, increase
+   to 23.2 million in 2003, and then climb to nearly 29 million in 2004.

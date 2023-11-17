@@ -1,0 +1,48 @@
+CNN.com - Space - 'Robonaut' prepares for spacewalking duties - June 13, 2000
+(cnn) -- the next generation of spacewalkers could fix faulty satellites
+   and space stations without breaking a sweat, needing a meal or
+   expecting a paycheck. already the first one, a metal humanoid known as
+   robonaut, has developed an impressive level of dexterity. resembling a
+   centurion, the prototype is a big leap ahead in attempts to develop
+   robots for use in space, according to nasa. within a few years,
+   similar robonauts could work outside the confines of a spacecraft,
+   performing routine maintenance alongside astronauts. "we've made some
+   pretty significant steps forward. previous ones were larger and not as
+   dexterous as current ones," said chris culbert, chief of robotics
+   systems at nasa's johnson space center in houston. predecessors
+   suffered from problems with bulk. but robonaut has slimmed down to the
+   size of an astronaut in a spacesuit, the ideal size for working with
+   equipment designed over the decades for human-sized users. robonaut
+   possesses flexible and sophisticated arms and hands, complete with
+   five fingers, a sturdy torso and a head equipped with two color
+   cameras for stereoscopic eyes. a skin made of woven material similar
+   to spacesuit fabric protects vulnerable areas against radiation and
+   the extreme temperature variations of space. in some ways, robonaut
+   exhibits more flexibility than humans. its wrists can rotate more, for
+   example. it can grip power tools and tether ropes, but its strength
+   does not yet match that of its biological cousins. "if you'd thumb
+   wrestle robonaut now, you'd win. in a couple years from now, that
+   probably won't be true," culbert said. the design of robonaut's crude
+   nervous system, a web of sensors, software and circuits, was borrowed
+   from human anatomy. engineers concentrated most of the controls and
+   command structures in a mechanical backbone. "there's no brain in the
+   head because it's limited in size. it pretty much all goes in the
+   torso. we don't have to worry about a digestive system." such robots
+   would complement astronauts, not replace them. during spacewalks now,
+   astronauts devote as much as one-third of their time to tasks like
+   installing foot restraints and laying out tools, routine jobs that a
+   robot could perform, culbert said. robonaut lacks the critical and
+   creative intelligence necessary to handle complex tasks and
+   unpredictable obstacles that often crop up in orbit. "they can't think
+   on the fly like humans," culbert said. but robonaut he has plenty of
+   mechanical moves, controlled by a human with virtual reality eyes and
+   hands. in a demonstration, cameras in robonaut's head beam visual
+   information to eyeglasses worn by a nasa technician, who directs the
+   robot's arms and fingers by moving gloves wired with sensors. the
+   system "gives a human the impression he's in the robot," culbert said.
+   sporting an epoxy helmet inspired by centurion armor, robonaut
+   resembles boba fett, an interstellar bounty hunter in the star wars
+   movie series. nasa said the likeness is purely coincidental. "we
+   didn't intend for it to look like boba fett," culbert said. "we took
+   it from a generic head model. we haven't contacted ('star wars'
+   director) george lucas to see how he feels about it yet."
