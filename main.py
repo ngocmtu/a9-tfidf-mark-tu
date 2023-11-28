@@ -1,6 +1,7 @@
-# put your name here as a *comment* (everyone in the team )
+# Mark Raddell
 import math, os, re
 from typing import Tuple, List, Dict
+
 
 class Document:
     """The Document class.
@@ -50,8 +51,17 @@ class TFIDF_Engine:
             to counts) attributes, appends each document object to self.documents. Sets self.N to the number
             of documents that it read in. 
         """
-        # TODO
-        pass
+        files_in_folder = os.listdir(self.corpus_location)
+
+        for f in files_in_folder:
+            document_name = Document()
+            with open(f) as file:
+                file_text = file.readlines()
+                document_name.text = file_text
+                file_tokens = self.tokenize(file_text)
+                document_name.terms = file_tokens
+                self.documents.append(document_name)
+            self.N += 1
 
 
     def create_df_table(self):
@@ -61,8 +71,15 @@ class TFIDF_Engine:
             Creates self.term_vector_words which holds the order of words for the document
             vector, to be used later. Any order is fine, but once set, should not be changed.
         """
-        # TODO 
-        pass
+        table_of_words = dict()
+        for doc in self.documents:
+            for word in doc.terms():
+                if word not in table_of_words:
+                    table_of_words[word] = 1
+                    self.term_vector_words.append(word) #make sure it matches table of words?
+                elif word in table_of_words:
+                    table_of_words[word] += 1
+        self.df_table.update(table_of_words)
 
     def create_term_vector(self, d: Document):
         """Creates a term vector for document d, storing it in the 'term_vector' attribute
@@ -73,13 +90,23 @@ class TFIDF_Engine:
 
             Args: a document, d - this could be a document from the corpus or a document representing a query
         """
-        # TODO 
+        for word in self.term_vector_words:
+            d.term_vector[word] = 0
+
+
+        for term, number_occurred in d.terms:
+            if term in self.term_vector_words:
+                tf = number_occurred /
+                idf =
+                tfidf = tf * idf
+                d.term_vector[term] = tfidf
         pass 
 
     def create_term_vectors(self):
         """Creates a term_vector for each document, utilizing self.create_term_vector.
         """
-        # TODO
+        for document in self.documents:
+            self.create_term_vector(document)
         pass
 
     def calculate_cosine_sim(self, d1: Document, d2: Document) -> float:
@@ -215,5 +242,10 @@ if __name__ == "__main__":
     assert len(t.get_results("star trek")) == len(t.documents), "get_results test 3"
 
     # t.query_loop() #uncomment this line to try out the search engine
+
+    """read in documents, create df table, create term vector - go through corpus three times 
+    - this 3 step process is called indexing
+    
+    last - create cosign similarity between documents"""
 
     
