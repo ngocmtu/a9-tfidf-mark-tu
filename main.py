@@ -1,5 +1,6 @@
 # Mark Raddell
 import math, os, re
+import numpy as np
 from typing import Tuple, List, Dict
 
 
@@ -42,7 +43,7 @@ class TFIDF_Engine:
 
     def __str__(self) :
         s = "corpus has: " + str(self.N) + " documents\n"
-        s+= "beginning of doc vector words is: \n" + str(self.term_vector_words[:25])
+        s += "beginning of doc vector words is: \n" + str(self.term_vector_words[:25])
         return s
 
     def read_files(self):
@@ -51,15 +52,23 @@ class TFIDF_Engine:
             to counts) attributes, appends each document object to self.documents. Sets self.N to the number
             of documents that it read in. 
         """
-        files_in_folder = os.listdir(self.corpus_location)
+        #files_in_folder = list()
+        #for file_name in os.listdir(self.corpus_location):
+            #files_in_folder.append(os.path.join(self.corpus_location, file_name))
 
-        for f in files_in_folder:
+        files_in_folder = [os.path.join(self.corpus_location, file_name) for file_name in os.listdir(self.corpus_location)]
+
+        for f_path in files_in_folder:
             document_name = Document()
-            with open(f) as file:
-                file_text = file.readlines()
+            with open(f_path, 'r') as file:
+                file_text = file.read()
                 document_name.text = file_text
                 file_tokens = self.tokenize(file_text)
-                document_name.terms = file_tokens
+                for token in file_tokens:
+                    if token not in document_name.terms:
+                        document_name.terms[token] = 1
+                    else:
+                        document_name.terms.update(token,document_name.terms[token] + 1)
                 self.documents.append(document_name)
             self.N += 1
 
@@ -73,10 +82,10 @@ class TFIDF_Engine:
         """
         table_of_words = dict()
         for doc in self.documents:
-            for word in doc.terms():
+            for word in doc.terms:
                 if word not in table_of_words:
                     table_of_words[word] = 1
-                    self.term_vector_words.append(word) #make sure it matches table of words?
+                    self.term_vector_words.append(word) #makes sure it matches order of table of words
                 elif word in table_of_words:
                     table_of_words[word] += 1
         self.df_table.update(table_of_words)
@@ -90,16 +99,21 @@ class TFIDF_Engine:
 
             Args: a document, d - this could be a document from the corpus or a document representing a query
         """
+
+        total_num_words = 0
+        for term, number_occurred in d.terms.items():
+            total_num_words += number_occurred
+
         for word in self.term_vector_words:
-            d.term_vector[word] = 0
+            tfidf = 0
+            for term, number_occurred in d.terms.items():
+                if term == word:
+                    tf = number_occurred / total_num_words
+                    documents_with_term = self.df_table[term]
+                    idf = math.log(len(self.documents) / documents_with_term)
+                    tfidf = tf * idf
 
-
-        for term, number_occurred in d.terms:
-            if term in self.term_vector_words:
-                tf = number_occurred /
-                idf =
-                tfidf = tf * idf
-                d.term_vector[term] = tfidf
+            d.term_vector.append(tfidf)
         pass 
 
     def create_term_vectors(self):
@@ -119,8 +133,17 @@ class TFIDF_Engine:
             Returns:
                 the dot product of the term vectors of the input documents
         """
-        # TODO
-        pass
+        cosine_similarity = np.dot(d1.term_vector, d2.term_vector)
+        """dot_product = sum(d1.term_vector[term] * d2.term_vector[term] for term in self.term_vector_words)
+        magnitude_d1 = math.sqrt(sum(float(value) ** 2 for value in d1.term_vector))
+        magnitude_d2 = math.sqrt(sum(float(value) ** 2 for value in d2.term_vector))
+
+        if magnitude_d1 == 0 or magnitude_d2 == 0:
+            return 0.0  # Avoid division by zero
+
+        cosine_similarity = dot_product / (magnitude_d1 * magnitude_d2)"""
+        return cosine_similarity
+
 
     def get_results(self, query: str) -> List[Tuple[float, int]]:
         """Transforms the input query into a document (with text, terms and term_vector attributes).
@@ -132,8 +155,25 @@ class TFIDF_Engine:
             similarity score, that is, the highest similarity score adn corresponding index will be
             first in the list.
         """
-        # TODO 
-        pass
+        query_document = Document()
+        query_document.text = query
+        file_tokens = self.tokenize(query_document.text)
+        for token in file_tokens:
+            if token not in query_document.terms:
+                query_document.terms[token] = 1
+            elif token in query_document.terms:
+                query_document.terms[token] += 1
+
+        self.create_term_vector(query_document)
+
+        similarity_scores = list()
+        doc_count = 0
+        for document in self.documents:
+            doc_count += 1
+            similarity_scores.append(tuple(self.calculate_cosine_sim(query_document, document), doc_count))
+
+        similarity_scores.sort(reverse=True, key=lambda x: x[0])
+        return similarity_scores
                 
 
     def query_loop(self):
@@ -208,15 +248,15 @@ if __name__ == "__main__":
     
     t = TFIDF_Engine()
     
-    #read the files , populating self.documents and self.N
+    # read the files , populating self.documents and self.N
     t.read_files()
-
+    # tests
     assert t.N == 122, "read files N test"
     assert t.documents[5].text != "", "read files document text test"
     assert t.documents[100].terms != {}, "read files document terms test"
     assert isinstance(t.documents[9].terms["the"], int), "read files document terms structure test"
 
-    #create self.df_table from the documents
+    # create self.df_table from the documents
     t.create_df_table()
     
     assert t.df_table["the"] == 122, "df_table 'the' count test"
