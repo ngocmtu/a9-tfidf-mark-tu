@@ -64,11 +64,12 @@ class TFIDF_Engine:
                 file_text = file.read()
                 document_name.text = file_text
                 file_tokens = self.tokenize(file_text)
-                for token in file_tokens:
-                    if token not in document_name.terms:
-                        document_name.terms[token] = 1
+                for token, count_words in file_tokens.items():
+                    document_name.terms[token] = count_words
+                    """if token not in document_name.terms:
+                        document_name.terms[token] = count_words
                     else:
-                        document_name.terms.update(token,document_name.terms[token] + 1)
+                        document_name.terms.update(token,document_name.terms[token] + 1)"""
                 self.documents.append(document_name)
             self.N += 1
 
@@ -104,6 +105,11 @@ class TFIDF_Engine:
         for term, number_occurred in d.terms.items():
             total_num_words += number_occurred
 
+        """This is a very time consuming loop I assume, 
+        since it loops through all words in the corpus, 
+        and for each word checks if it matches any in the current document 
+        - if trying to use for real I would find a more elegant / efficient way 
+        to loop through the values, but this works"""
         for word in self.term_vector_words:
             tfidf = 0
             for term, number_occurred in d.terms.items():
@@ -114,14 +120,13 @@ class TFIDF_Engine:
                     tfidf = tf * idf
 
             d.term_vector.append(tfidf)
-        pass 
 
     def create_term_vectors(self):
         """Creates a term_vector for each document, utilizing self.create_term_vector.
         """
         for document in self.documents:
             self.create_term_vector(document)
-        pass
+
 
     def calculate_cosine_sim(self, d1: Document, d2: Document) -> float:
         """Calculates the cosine simularity between two documents, the dot product of their
@@ -133,15 +138,15 @@ class TFIDF_Engine:
             Returns:
                 the dot product of the term vectors of the input documents
         """
-        cosine_similarity = np.dot(d1.term_vector, d2.term_vector)
-        """dot_product = sum(d1.term_vector[term] * d2.term_vector[term] for term in self.term_vector_words)
+        # cosine_similarity = np.dot(d1.term_vector, d2.term_vector)
+        dot_product = sum(d1.term_vector[i] * d2.term_vector[i] for i in range(len(self.term_vector_words)))
         magnitude_d1 = math.sqrt(sum(float(value) ** 2 for value in d1.term_vector))
         magnitude_d2 = math.sqrt(sum(float(value) ** 2 for value in d2.term_vector))
 
         if magnitude_d1 == 0 or magnitude_d2 == 0:
             return 0.0  # Avoid division by zero
 
-        cosine_similarity = dot_product / (magnitude_d1 * magnitude_d2)"""
+        cosine_similarity = dot_product / (magnitude_d1 * magnitude_d2)
         return cosine_similarity
 
 
@@ -167,13 +172,18 @@ class TFIDF_Engine:
         self.create_term_vector(query_document)
 
         similarity_scores = list()
-        doc_count = 0
+        doc_index = 0
         for document in self.documents:
-            doc_count += 1
-            similarity_scores.append(tuple(self.calculate_cosine_sim(query_document, document), doc_count))
-
-        similarity_scores.sort(reverse=True, key=lambda x: x[0])
-        return similarity_scores
+            local_list_similarity_scores = list()
+            local_list_similarity_scores.append(self.calculate_cosine_sim(query_document, document))
+            local_list_similarity_scores.append(doc_index)
+            similarity_scores.append(tuple(local_list_similarity_scores))
+            doc_index += 1
+        def get_first_item(x):
+            return x[0]
+        sorted_scores = sorted(similarity_scores, reverse=True, key=get_first_item)
+        # print(sorted_scores[0:4]) # used for testing
+        return sorted_scores
                 
 
     def query_loop(self):
@@ -271,21 +281,20 @@ if __name__ == "__main__":
     #tests for calculate_cosine_sim
     assert t.calculate_cosine_sim(t.documents[0], t.documents[1]) > 0, "calculate_cosine_sim test 1"
     assert t.calculate_cosine_sim(t.documents[0], t.documents[1]) < 1, "calculate_cosine_sim test 1"
+    #print(abs(t.calculate_cosine_sim(t.documents[0], t.documents[0]) - 1))
     assert abs(t.calculate_cosine_sim(t.documents[0], t.documents[0]) - 1) < 0.01
 
     
     #tests for get_results
     # assert t.get_results("star wars")[0][1] == 111, "get_results test 1"
+    # print(t.documents[t.get_results("star wars")[0][1]].text) # used for testing
     assert "Lucas announces new 'Star Wars' title" in t.documents[t.get_results("star wars")[0][1]].text, "get_results test 1"
     # assert t.get_results("movie trek george lucas")[2][1] == 24, "get_results test 2"
     assert "Stars of 'X-Men' film are hyped, happy, as comic heroes" in t.documents[t.get_results("movie trek george lucas")[2][1]].text 
     assert len(t.get_results("star trek")) == len(t.documents), "get_results test 3"
 
-    # t.query_loop() #uncomment this line to try out the search engine
+    t.query_loop() #uncomment this line to try out the search engine
 
-    """read in documents, create df table, create term vector - go through corpus three times 
-    - this 3 step process is called indexing
-    
-    last - create cosign similarity between documents"""
+
 
     
